@@ -1,0 +1,291 @@
+.lightHero {
+  padding: 1rem;
+  padding-top: 5.5rem;
+  margin-bottom: 5rem;
+  background-color: var(--light);
+  overflow: hidden;
+}
+.lightHero__bg {
+  position: relative;
+  background-image: url("https://devtechnosys.com/images-2023/home/bg-home-banner.webp");
+  background-size: cover;
+  border-radius: 2.5rem;
+  isolation: isolate;
+}
+.lightHero__bg--cricle-1 {
+  width: 100px;
+  height: 100px;
+  top: -64px;
+  left: 125px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.lightHero__bg--cricle-2 {
+  border: 16px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+
+  right: -184px;
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+}
+.lightHero__bg--dots {
+  position: absolute;
+  bottom: -53px;
+  left: 0;
+  animation: float_up_down 5s linear infinite;
+  z-index: -1;
+  display: none;
+}
+.lightHero__wrapper {
+  padding: 2.5rem 1rem;
+  display: grid;
+  justify-content: center;
+  row-gap: 5rem;
+}
+.lightHero__imgGroup {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: -100px;
+  position: relative;
+  isolation: isolate;
+}
+.lightHero__imgGroup *[class^="lightHero__imgGroup--img"] {
+  position: relative;
+}
+.award-winnning {
+  position: absolute;
+  right: 4px;
+  top: -88px;
+}
+figure.lightHero__imgGroup--img-1 img {
+  animation: float_up_down 5s linear infinite;
+}
+figure.lightHero__imgGroup--img-2 img {
+  animation: float_up_down 6s linear infinite;
+}
+figure.lightHero__imgGroup--img-3 img {
+  animation: float_up_down 3s linear infinite;
+}
+figure.lightHero__imgGroup--img-4 img {
+  animation: float_up_down 6s linear infinite;
+}
+.lightHero__imgGroup--star-w {
+  position: absolute;
+  top: -55px;
+  left: 15px;
+}
+.lightHero__imgGroup--star-b {
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+}
+.lightHero__imgGroup--star-w,
+.lightHero__imgGroup--star-b {
+  animation: rotateme 22s linear infinite;
+  width: 21px;
+  z-index: -1;
+}
+@keyframes float_up_down {
+  0% {
+    transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotateme {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+.lightHero__subtitle {
+  font-size: 18px;
+  color: #1145d5;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+}
+.lightHero__subtitle::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 48px;
+  background: #ffcb21;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.lightHero__title {
+  font-size: 24px;
+  color: #252a6a;
+  line-height: 30px;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+.lightHero__title br {
+  display: none;
+}
+.lightHero__text {
+  font-size: 16px;
+  color: #647495;
+  line-height: 24px;
+  font-weight: 500;
+}
+.lightHero__actionBox {
+  margin-top: 24px;
+}
+.lightHero__actionButton {
+  font-size: 0.7rem;
+  background: linear-gradient(to right, #f99b1c 0, #ff6f00 100%);
+  border-radius: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  gap: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 0 3px #000;
+  border: none;
+  background-size: 250% 100%;
+  cursor: pointer;
+  padding: 10px 6px;
+  height: 34px;
+  font-size: 11px;
+  transition: background-position 0.4s ease-in-out;
+}
+.lightHero__actionButton:hover {
+  background-position: 100% 0;
+}
+.lightHero__actionButton svg {
+  color: #252a6a;
+  transition: transform 0.4s;
+}
+.lightHero__actionButton:hover svg {
+  transform: rotate(-45deg);
+}
+
+/* =============== */
+/* === QUERIES === */
+/* =============== */
+@media (min-width: 425px) {
+  .lightHero__bg--cricle-1 {
+    width: 170px;
+    height: 170px;
+    top: -130px;
+  }
+  .lightHero__bg--cricle-2 {
+    right: -184px;
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+  }
+  .lightHero__imgGroup--star-w,
+  .lightHero__imgGroup--star-b {
+    width: 50px;
+  }
+
+  .lightHero__subtitle {
+    font-size: 20px;
+  }
+  .lightHero__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .lightHero__actionBox {
+    margin-top: 40px;
+  }
+  .lightHero__actionButton {
+    padding: 10px;
+    height: 39px;
+  }
+}
+@media (min-width: 768px) {
+  .lightHero__title {
+    font-size: 46px;
+    line-height: 44px;
+  }
+  .lightHero__actionButton {
+    padding: 10px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .lightHero__wrapper {
+    padding: 5rem 0;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+  }
+  .lightHero__bg--dots {
+    display: block;
+  }
+  .lightHero__contentWrapper {
+    order: -1;
+  }
+  .lightHero__title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .lightHero__title br {
+    display: block;
+  }
+  .lightHero__actionButton {
+    padding: 10px 15px;
+    height: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  .lightHero {
+    padding-top: 10.5rem;
+  }
+  .lightHero__bg--cricle-1 {
+    width: 328px;
+    height: 328px;
+    left: 125px;
+    top: -207px;
+    border-width: 16px;
+  }
+  .lightHero__bg--cricle-2 {
+    right: -388px;
+    width: 641px;
+    height: 641px;
+    bottom: -148px;
+  }
+  .lightHero__subtitle {
+    font-size: 22px;
+  }
+  .lightHero__title {
+    font-size: 75px;
+    line-height: 70px;
+  }
+}

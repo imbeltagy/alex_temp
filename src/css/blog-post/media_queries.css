@@ -1,0 +1,43 @@
+@media (max-width: 1200px) {
+  .hero__breadcrumb {
+    padding-inline: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    min-height: 650px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__description {
+    font-size: 15px;
+  }
+  .hero__title {
+    font-size: 26px;
+  }
+  .hero__breadcrumbItem a,
+  .hero__breadcrumbItem {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .hero__description {
+    font-size: 20px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1441px) {
+  .hero__description {
+    font-size: 17px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1601px) {
+  .hero__title {
+    font-size: 45px;
+  }
+}

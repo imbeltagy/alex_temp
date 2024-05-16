@@ -1,0 +1,128 @@
+/* Location */
+.loc {
+  padding: 5rem 1rem 2rem;
+  background-color: var(--light);
+}
+.loc__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+  gap: 1rem;
+}
+.loc__card {
+  max-width: 370px;
+  border: 1px solid var(--mediumGray);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.loc__img img {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.loc__info {
+  padding: 1rem;
+}
+.loc__infoListItem:not(:nth-of-type(3)),
+.loc__title {
+  margin-bottom: 1rem;
+}
+.loc__title {
+  font-size: 20px;
+}
+
+.loc__infoListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.loc__infoDesc {
+  font-size: 13px;
+  color: var(--lightGray);
+}
+.loc__number,
+.loc__email {
+  color: var(--lightGray);
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.loc__number a,
+.loc__email a {
+  font-size: 13px;
+}
+.loc__number:hover,
+.loc__email:hover,
+.loc__number:focus,
+.loc__email:focus {
+  color: var(--primaryColor);
+}
+/* Location END*/
+
+@media (min-width: 576px) {
+  .loc__card {
+    max-width: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .loc__info {
+    width: 60%;
+  }
+  .loc__img {
+    width: 40%;
+  }
+  .loc__img img {
+    border-radius: 10px 0 0 10px;
+  }
+  .loc__title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .loc__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .loc__card {
+    display: unset;
+  }
+  .loc__info {
+    width: 100%;
+  }
+  .loc__img {
+    width: 100%;
+  }
+  .loc__img img {
+    border-radius: 10px 10px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .loc__title {
+    font-size: 24px;
+  }
+}

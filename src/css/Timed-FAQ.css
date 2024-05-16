@@ -1,0 +1,16 @@
+/* .FAQ__accordion {
+  --animation-duration: 5000ms;
+} */
+.FAQ__panel-progress {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--primaryColor);
+}
+.FAQ__accordion-panel.active .FAQ__panel-progress {
+  width: 100%;
+  transition: width var(--animation-duration, 5000ms) linear;
+}

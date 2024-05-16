@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+  .cases {
+    padding-inline: 2rem;
+  }
+  .cases__header {
+    text-align: left;
+  }
+  .cases__header p {
+    margin-left: 12px;
+  }
+  .hero__breadCrumb {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding: 10rem 1rem 1rem;
+  }
+  .hero h1 {
+    text-align: unset;
+    max-width: 1020px;
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  .project__block {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .project__block-title {
+    width: 20%;
+  }
+  .project__block-parts {
+    width: 80%;
+  }
+  .project__block-singlePart--grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cases__title {
+    font-size: 4.6rem;
+    line-height: 4.8rem;
+    text-align: left;
+    max-width: 1140px;
+  }
+}

@@ -1,0 +1,111 @@
+.ourBenefits {
+  background-color: var(--lighterGray);
+  padding: 30px 1rem 90px;
+}
+.ourBenefits__header {
+  border-bottom: 1px solid #ece3da;
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.ourBenefits__header span {
+  position: relative;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.ourBenefits__header span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #232326;
+  top: 50%;
+  left: -11px;
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+}
+.ourBenefits__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.ourBenefits__title {
+  font-size: 3.14rem;
+  line-height: 3.4rem;
+  text-align: center;
+  font-family: "TTInterfacesMedium", sans-serif;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+.ourBenefits__img img {
+  border-radius: 1rem;
+}
+.ourBenefits__grid {
+  display: grid;
+  gap: 2rem;
+}
+.ourBenefits__grid--item {
+  padding: 0 0 60px;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(100px);
+}
+.ourBenefits__grid--item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ourBenefits__grid--item-number {
+  font-size: 5.7142857143rem;
+  font-weight: 500;
+  line-height: 7.1428571429rem;
+  color: #ece3da;
+  padding: 0 0 0.7142857143rem;
+}
+.ourBenefits__grid--item-title {
+  font-size: 1.5rem;
+  line-height: 2.15rem;
+  font-weight: 600;
+  padding: 0 0 0.715rem;
+}
+.ourBenefits__grid--item-text {
+  font-size: 1.15rem;
+  line-height: 1.715rem;
+  color: #404040;
+  font-weight: 500;
+  font-family: "TTInterfacesRegular", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .ourBenefits {
+    padding-inline: 2rem;
+  }
+  .ourBenefits__header {
+    text-align: left;
+  }
+  .ourBenefits__header p {
+    margin-left: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .ourBenefits__title {
+    font-size: 4.6rem;
+    line-height: 4.8rem;
+    text-align: left;
+    max-width: 1140px;
+  }
+  .ourBenefits__grid--item-title {
+    font-size: 2.15rem;
+    line-height: 2.8rem;
+  }
+  .ourBenefits__content {
+    flex-direction: row;
+    flex: 2;
+    gap: 130px;
+  }
+  .ourBenefits__floating-sticky {
+    position: sticky;
+    top: 100px;
+  }
+}

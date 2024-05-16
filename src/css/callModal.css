@@ -1,0 +1,170 @@
+.callModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+}
+.modal__backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal__formContainer {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: var(--light);
+  height: 100%;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+.modal__form {
+  margin-inline: auto;
+  max-width: 800px;
+  overflow-y: auto;
+  padding: 40px 30px;
+}
+.modal__close {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal__avatarImg {
+  width: 40%;
+}
+.modal__avatarImg img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.modal__avatarDesc {
+  width: 60%;
+}
+.modal__avatarDesc strong {
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.cts__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal__formBody {
+  border-radius: 10px;
+  padding: 2rem 1rem 2rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+.modal-formBody {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+.modal-label input,
+.modal-label select {
+  padding: 1rem;
+  outline: none;
+  width: 100%;
+  border: 1px solid var(--mediumGray);
+  color: var(--lightGray);
+  font-size: 14px;
+  background-color: var(--light);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.modal-label input::-webkit-input-placeholder {
+  color: var(--lightGray);
+}
+
+.modal-label input::-moz-placeholder {
+  color: var(--lightGray);
+}
+
+.modal-label input:-ms-input-placeholder {
+  color: var(--lightGray);
+}
+
+.modal-label input::-ms-input-placeholder {
+  color: var(--lightGray);
+}
+
+.modal-label input::placeholder {
+  color: var(--lightGray);
+}
+.modal-label select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* padding: 1rem; */
+}
+.modal-label button {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--light);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-inline: auto;
+}
+.modal-label button:hover,
+.modal-label button:focus {
+  background-color: var(--secondaryColor);
+}
+
+.showModal {
+  pointer-events: unset;
+}
+.showModal .modal__backdrop {
+  opacity: 1;
+}
+.showModal .modal__formContainer {
+  transform: translateX(0%);
+}
+
+@media (min-width: 768px) {
+  .modal__formContainer {
+    max-width: 430px;
+  }
+}

@@ -1,0 +1,111 @@
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+  }
+  .procs__cardTitle-number {
+    position: unset;
+    left: unset;
+    top: unset;
+  }
+}
+@media (min-width: 992px) {
+  .hero__title {
+    font-size: 32px;
+  }
+  /* === OUR TEAM SECTION === */
+  .team__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .team__imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    order: -1;
+  }
+  .team__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .procs__card > .container-1170px {
+    flex-direction: row;
+  }
+  .procs__cardText {
+    width: 60%;
+  }
+  .procs__card:nth-of-type(odd) .procs__cardText {
+    order: 1;
+    margin-left: -9%;
+  }
+  .procs__card:nth-of-type(even) .procs__cardText {
+    margin-right: -9%;
+  }
+  .procs__cardImg {
+    width: 40%;
+  }
+  .procs__cardTitle-number {
+    position: absolute;
+    top: -60px;
+    font-size: 50px;
+  }
+  .procs__card:nth-of-type(odd) .procs__cardTitle-number {
+    right: 0;
+  }
+  .procs__card:nth-of-type(even) .procs__cardTitle-number {
+    left: 0;
+  }
+  .writerEffect__getInTouch {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .indicator-bar {
+    left: 130px;
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1300px) {
+  .indicator-bar {
+    left: 165px;
+  }
+}
+@media (min-width: 1400px) {
+  .indicator-bar {
+    left: 200px;
+  }
+}
+@media (min-width: 1441px) {
+  .hero__title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .hero__title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 469px) {
+  .hero {
+    min-height: 700px;
+  }
+  .hero__link {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+  }
+}

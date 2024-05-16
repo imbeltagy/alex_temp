@@ -1,0 +1,275 @@
+/* ================== */
+/* == CASE STUDIES == */
+/* ================== */
+.caseStudies {
+  background-image: url("https://www.hubspire.com/wp-content/themes/Hubspire-Rebranding-2023/images/home/bg.jpg");
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+}
+.caseStudies__title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--secondaryColor);
+  margin-bottom: 1.5rem;
+}
+.caseStudies__subtitle {
+  text-align: center;
+  color: var(--lightGray);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.caseStudies__cards {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+.caseStudies__cards--card {
+  padding-top: 1.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  grid-column: span 2;
+  display: grid;
+  align-content: space-between;
+}
+.caseStudies__cards--card-1 {
+  background-color: #323232;
+  color: var(--light);
+}
+.caseStudies__cards--card-2 {
+  background-color: #fff;
+  color: var(--lightDark);
+}
+.caseStudies__cards--card-3 {
+  background-color: #ad4e97;
+  color: var(--light);
+}
+.caseStudies__cards--card-4 {
+  background-color: #0d3da8;
+  color: var(--light);
+  padding-bottom: 1rem;
+}
+
+.caseStudies__cards--cardContainer {
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.caseStudies__cards--cardTitle {
+  color: currentColor;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.caseStudies__cards--cardContent {
+  color: currentColor;
+}
+.caseStudies__cards--cardLink {
+  color: currentColor;
+  text-decoration: underline;
+  position: relative;
+  transition: padding 0.3s;
+}
+.caseStudies__cards--cardLink::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.25rem;
+  width: 0;
+  margin-inline-end: 0;
+  background-color: currentColor;
+  border-radius: 1000px;
+  transition: width 0.3s;
+}
+.caseStudies__cards--card:hover .caseStudies__cards--cardLink {
+  padding-inline-start: 1.5rem;
+}
+.caseStudies__cards--card:hover .caseStudies__cards--cardLink::before {
+  width: 1rem;
+}
+
+.caseStudies__cards--cardImage img {
+  width: 100%;
+}
+.caseStudies__cards--cardImage-right {
+  padding-left: 1.5rem;
+}
+.caseStudies__cards--cardImage-center {
+  padding-inline: 1.5rem;
+}
+.caseStudies__cards--cardImage-left {
+  padding-right: 1.5rem;
+}
+
+/* ==================== */
+/* == POINTS SECTION == */
+/* ==================== */
+.points {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+  background-color: var(--light);
+}
+.points__container {
+  display: flex;
+  gap: 1rem;
+}
+.FAQ__accordion,
+.points__lgCoverImage {
+  flex-grow: 2;
+  width: 100%;
+}
+.points .FAQ__panel-title {
+  justify-content: flex-start;
+}
+.points__panel-number {
+  width: 2rem;
+}
+.points .FAQ__accordion-content {
+  padding-inline-start: 3rem;
+}
+.points .FAQ__accordion-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.points__coverImage img,
+.points__lgCoverImage img {
+  border-radius: 1.5rem;
+  width: 100%;
+}
+.points__lgCoverImage {
+  display: none;
+}
+
+/* ======================= */
+/* == FEATURED INSIGHTS == */
+/* ======================= */
+.featuredInsights {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+  background-color: var(--light);
+}
+.featuredInsights__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.featuredInsights__title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--secondaryColor);
+}
+.featuredInsights__link {
+  text-decoration: underline;
+  color: var(--secondaryColor);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.featuredInsights__link:hover {
+  color: var(--primaryColor);
+}
+
+.featuredInsights__cards {
+  --trans-dur: 0.4s;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+.featuredInsights__card {
+  background-color: var(--mediumGray);
+  padding-inline: 1rem;
+  padding-block: 1.5rem;
+  cursor: pointer;
+}
+.featuredInsights__cardTitle {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--secondaryColor);
+}
+.featuredInsights__cardSubtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--secondaryColor);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-block: 1rem;
+  transition: color var(--trans-dur);
+}
+.featuredInsights__card:hover .featuredInsights__cardSubtitle {
+  color: var(--primaryColor);
+}
+.featuredInsights__cardCoverImage {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.featuredInsights__cardCoverImage img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform var(--trans-dur), filter var(--trans-dur);
+  object-fit: cover;
+  height: 12.5rem;
+}
+.featuredInsights__card:hover .featuredInsights__cardCoverImage img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+.featuredInsights__cardLink {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--secondaryColor);
+  position: relative;
+  transition: color var(--trans-dur);
+}
+.featuredInsights__card:hover .featuredInsights__cardLink {
+  color: var(--primaryColor);
+}
+.featuredInsights__cardLink::after {
+  content: "";
+  position: absolute;
+  left: calc(100% - 0.5rem);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  height: 0.5rem;
+  width: 0.5rem;
+  border: solid var(--primaryColor);
+  border-width: 1px 1px 0 0;
+  opacity: 0;
+  transition: left var(--trans-dur), opacity var(--trans-dur);
+}
+.featuredInsights__card:hover .featuredInsights__cardLink::after {
+  left: calc(100% + 0.5rem);
+  opacity: 1;
+}
+
+/* ============ */
+/* == BRANDS == */
+/* ============ */
+.brands {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+  background-color: var(--light);
+  border-top: solid 1px var(--mediumGray);
+}
+.brands__swiperSlide {
+  min-height: 4rem;
+  position: relative;
+}
+.brands__swiperSlide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,101 @@
+.writerEffect {
+  padding: 3rem;
+  background-color: var(--light);
+  position: relative;
+}
+.getInTouch {
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  background-color: var(--light);
+  padding: 25px;
+  border: 1px solid #ecedee;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.getInTouch p {
+  font-size: 18px;
+  color: var(--secondaryColor);
+  font-weight: 600;
+  text-align: center;
+}
+.typeMachine {
+  color: var(--primaryColor);
+  margin-inline: 0.25rem;
+}
+.getInTouch a {
+  background-color: var(--primaryColor);
+  color: var(--light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.getInTouch a:hover,
+.getInTouch a:focus {
+  background-color: var(--secondaryColor);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.blinkingCursor {
+  margin-right: 0.25rem;
+  -webkit-animation: blink 500ms linear 0s infinite alternate both;
+  animation: blink 500ms linear 0s infinite alternate both;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (min-width: 768px) {
+  .getInTouch p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .getInTouch {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}

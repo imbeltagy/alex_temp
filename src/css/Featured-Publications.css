@@ -1,0 +1,63 @@
+/* WHO TALK ABOUT US */
+.whoTalk {
+  padding-block: 5rem;
+  background-color: var(--lighterGray);
+  padding-inline: 1rem;
+}
+.whoTalk__brands {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 2rem;
+}
+.whoTalk__brand {
+  background-color: #fdfefe;
+  position: relative;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.whoTalk__brand::before {
+  content: "";
+  width: 2rem;
+  height: 10px;
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-image: url("../../assets/FeaturedIn/Publications/featured-in-bg-pattern.png");
+  display: none;
+}
+/* WHO TALK ABOUT US  END*/
+@media (min-width: 768px) {
+  .whoTalk__brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .whoTalk__brand:nth-of-type(5) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .whoTalk__brand::before {
+    display: block;
+  }
+  .whoTalk__brand:nth-of-type(4)::before,
+  .whoTalk__brand:nth-of-type(6)::before {
+    display: none;
+  }
+}

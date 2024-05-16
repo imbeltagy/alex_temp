@@ -1,0 +1,120 @@
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.horizontal-slider {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+  background-color: var(--light);
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 40px;
+}
+.horizontal-slider:hover .horizontal-track {
+  animation-play-state: paused;
+}
+
+.horizontal-track {
+  column-gap: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  animation: 40s slide infinite linear;
+  will-change: transform;
+}
+.horizontal-slide {
+  width: 560px;
+  background-color: var(--light);
+  border-radius: 50px 50px 40px 40px;
+  box-shadow: 20px 10px 50px hsla(0, 0%, 52%, 0.15);
+  color: unset;
+}
+.horizontal-preview {
+  border-radius: 50px;
+  overflow: hidden;
+}
+.horizontal-preview img {
+  width: 100%;
+}
+.horizontal-text {
+  padding: 25px 40px;
+}
+.horizontal-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.horizontal-text p {
+  font-weight: 800;
+  font-size: 16px;
+}
+.horizontal-text p span {
+  padding-left: 50px;
+  position: relative;
+  font-weight: 400;
+}
+.horizontal-text p span:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  height: 1px;
+  width: 20px;
+  background-color: #393a3a;
+}
+@media (max-width: 1500px) {
+  .horizontal-slide {
+    width: 420px;
+    border-radius: 20px 20px 15px 15px;
+  }
+  .horizontal-preview {
+    border-radius: 20px;
+  }
+  .horizontal-text {
+    padding: 20px;
+  }
+  .horizontal-text h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1366px) {
+  .horizontal-slide {
+    width: 400px;
+  }
+  .horizontal-text h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .horizontal-slide {
+    width: 400px;
+    border-radius: 25px 25px 20px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .horizontal-slide {
+    width: 360px;
+  }
+  .horizontal-preview {
+    border-radius: 25px;
+  }
+  .horizontal-text {
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .horizontal-slide {
+    width: 320px;
+  }
+  .horizontal-text h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,222 @@
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .servicesHero__cover--findMore {
+    display: flex;
+  }
+  .servicesHero {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+  }
+  .servicesHero__textWrapper {
+    padding: 6rem 3rem;
+  }
+  .services__breadcrumbs {
+    font-size: 0.85rem;
+    padding-top: 1.25rem;
+  }
+  .servicesHero__title {
+    font-size: 2.75rem;
+  }
+  .servicesHero__text {
+    display: block;
+  }
+
+  /* WHAT WE DO */
+  .whatWeDo {
+    padding-block: 6rem;
+  }
+  .sectionSubtitle {
+    max-width: 50%;
+  }
+
+  /* PORTFOLIO */
+  .portfolio__title {
+    font-size: 3rem;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__cardInfo--sibtitle {
+    display: block;
+  }
+
+  /* SERVICES */
+  .service__content {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .service__content > * {
+    width: 50%;
+  }
+  .service__leftBg {
+    transform: translateX(-40%);
+  }
+  .service__rightBg {
+    transform: translate(30%, 20%);
+  }
+
+  /* CONTACT */
+  .contact,
+  .contact__header,
+  .contact__body {
+    background-color: var(--secondaryColor);
+  }
+  .contact__headerWrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  .contact__title {
+    color: var(--light);
+    font-size: 2rem;
+    width: 40%;
+    padding-inline-end: 3rem;
+  }
+  .contact__subtitle {
+    width: 60%;
+    font-size: 1.3rem;
+    padding-inline-end: 3rem;
+  }
+  .contact__body {
+    padding-inline: 2rem;
+  }
+  .contact__bodyWrapper {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .contact__methods {
+    width: 30%;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .contact__methods--item {
+    gap: 1rem;
+  }
+  .contact__form {
+    background-color: transparent;
+  }
+  .contact__formWrapper {
+    background-color: #e9e9e9;
+    position: relative;
+    padding-block: 1.5rem 3rem;
+    padding-left: 3rem;
+    isolation: isolate;
+  }
+  .contact__formWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(100% + 4rem);
+    background-color: #e9e9e9;
+    z-index: -1;
+  }
+  .contact__form--row {
+    display: flex;
+    gap: 3rem;
+  }
+  .contact__form--row > * {
+    width: 50%;
+  }
+
+  .contact__form--wedgit-desktop {
+    display: block;
+  }
+  .contact__form--wedgit-mobile {
+    display: none;
+  }
+  .form__submit,
+  .contact__form--wedgit-mobile {
+    margin-inline: 0;
+  }
+}
+@media (min-width: 992px) {
+  .brands__wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .servicesHero__textWrapper {
+    padding-top: 10rem;
+    padding-inline: 6rem;
+  }
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.8rem;
+  }
+  .whatWeDo__cardTitle {
+    font-size: 1.5rem;
+  }
+
+  /* PORTFOLIO */
+  .portfolio__card:hover .portfolio__cardInfo--topContent {
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .portfolio__cardInfo--bottomContent {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 100%;
+    padding-inline: 1.5rem;
+  }
+  .portfolio__cardInfo--bottomContent p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: inherit;
+  }
+  .portfolio__card:hover .portfolio__cardInfo--bottomContent {
+    top: 50%;
+  }
+
+  /* SERVICES */
+  .service__leftBg {
+    top: auto;
+    bottom: 2rem;
+  }
+  .service__header {
+    width: 50%;
+  }
+  .service__title {
+    font-size: 2.5rem;
+  }
+  .service__subtitle {
+    font-size: 1.25rem;
+  }
+  .service__item--title {
+    font-size: 1.4rem;
+  }
+  .service__item--content {
+    font-size: 1rem;
+  }
+  .contact__methods--itemName {
+    font-size: 1rem;
+  }
+  .contact__methods--itemValue {
+    font-size: 1.2rem;
+  }
+  /* .contact__formWrapper::before {
+    width: 110%;
+  } */
+}
+@media (min-width: 1440px) {
+  .services__breadcrumbs {
+    font-size: 1rem;
+  }
+  .servicesHero__title {
+    font-size: 4rem;
+  }
+  .portfolio__title {
+    font-size: 4rem;
+  }
+  .contact__methods--itemValue {
+    font-size: 1.6rem;
+  }
+}

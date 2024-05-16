@@ -1,0 +1,195 @@
+/* TESTIMONIALS */
+.testi {
+  padding-block: 5rem;
+  padding-inline: 1rem;
+  background-color: var(--lighterGray);
+}
+
+.testi__swiper .testi__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #e2e3e5;
+  background-color: var(--light);
+}
+.testi__swiper .testi__slide img {
+  -webkit-filter: var(--whiteFilter);
+  filter: var(--whiteFilter);
+}
+.testim__slideDesc {
+  color: var(--lightGray);
+}
+.testim__worker {
+  color: var(--primaryColor);
+}
+.testi__swipContainer {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.testi__preview {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+.testi__imgs {
+  display: none;
+}
+
+.testi__img {
+  display: block;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testi__imgQuote {
+  background-color: var(--lightGray);
+}
+.testi__img img {
+  border-radius: 50%;
+}
+.testi__img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+.testi__img:nth-of-type(2) {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.testi__img:nth-of-type(3) {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+.testi__img:nth-of-type(4) {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.testi__img:nth-of-type(5) {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.testi__img:nth-of-type(6) {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+.testi__img:nth-of-type(7) {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.testi__img:nth-of-type(8) {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.testi__mainPreview {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--primaryColor);
+  -webkit-box-shadow: 0 2px 17px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 17px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 0.6rem;
+  width: 200px;
+  height: 200px;
+}
+.testi__mainPreview img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testi__mainPreviewQuotes,
+.testi__imgQuote {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.testi__mainPreviewQuotes {
+  background-color: var(--primaryColor);
+}
+.testi__mainPreviewQuotes img,
+.testi__imgQuote img {
+  -webkit-filter: var(--whiteFilter);
+  filter: var(--whiteFilter);
+}
+.testi__swiper-pagination {
+  display: none;
+}
+/* TESTIMONIALS END*/
+@media (min-width: 768px) {
+  .testi__preview {
+    width: 470px;
+    height: 470px;
+    border: 1px solid var(--mediumGray);
+    border-radius: 50%;
+    margin-block: 5rem;
+    margin-inline: auto;
+  }
+  .testi__imgs {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .testi__swipContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}

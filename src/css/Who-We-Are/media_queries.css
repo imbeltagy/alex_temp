@@ -1,0 +1,221 @@
+/* ========================================== */
+/* ======= MEDIA QUERIES (MIN-WIDTH) ======== */
+/* ========================================== */
+
+/* ======================= */
+
+@media (min-width: 320px) {
+  .team__statsList {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: unset;
+  }
+  .team__statsIcon {
+    margin-inline: unset;
+  }
+}
+/* ======================= */
+@media (min-width: 550px) {
+  .team__statsListItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* ======================= */
+@media (min-width: 768px) {
+  .sectionsTitleTag {
+    font-size: 26px;
+  }
+
+  .floatingQuote {
+    right: -50px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  /* === OUR TEAM SECTION  === */
+  .team__statsList {
+    grid-template-columns: repeat(2, 280px);
+  }
+  .team__statsListItem {
+    text-align: left;
+  }
+  .team__statsIcon {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .team__statsDescNum {
+    font-size: 36px;
+  }
+  /* === OUR TEAM SECTION  === */
+
+  /* === LEADERSHIP SECTION  === */
+  .lds__card {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .lds__card:nth-of-type(odd) .lds__cardAvatar {
+    order: 1;
+  }
+  .lds__overview::before {
+    top: 0px;
+    left: -15px;
+  }
+  .lds__overview::after {
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%) rotate(180deg);
+  }
+  .lds__card:nth-of-type(odd) .lds__overview::before {
+    top: 0px;
+    left: 15px;
+  }
+  .lds__card:nth-of-type(odd) .lds__overview::after {
+    top: 50%;
+    left: 100%;
+    transform: translate(-0%, -50%) rotate(0deg);
+  }
+  /* === LEADERSHIP SECTION  === */
+
+  /* === MISSION-VISSION SECTION  === */
+  .mv__cardHeading {
+    font-size: 22px;
+  }
+  /* === MISSION-VISSION SECTION  === */
+}
+/* ======================= */
+@media (min-width: 992px) {
+  .sectionsTitleTag {
+    font-size: 30px;
+  }
+  /* === OUR TEAM SECTION === */
+  .team__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .team__imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    order: -1;
+  }
+  .team__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .team__statsList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* === OUR TEAM SECTION === */
+
+  /* === LEADERSHIP SECTION === */
+  .lds__cardAvatarContainer {
+    height: 380px;
+    width: 380px;
+  }
+  /* === LEADERSHIP SECTION === */
+
+  /* === HISTORY SECTION  === */
+  .hist__made {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .hist__madeImgHolder {
+    width: 30%;
+  }
+  .hist__made-swiper {
+    width: 60%;
+  }
+  /* === HISTORY SECTION  === */
+
+  /* === SUCCEEDING SECTION  === */
+  .succ__brands {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+/* ======================= */
+@media (min-width: 1024px) {
+  /* === OUR TEAM SECTION === */
+  .team__infoTitle {
+    font-size: 24px;
+  }
+  /* === OUR TEAM SECTION === */
+
+  /* === HISTORY SECTION === */
+  .hist__made {
+    align-items: center;
+  }
+  .hist__made-swiper {
+    width: 55%;
+  }
+  /* === HISTORY SECTION === */
+}
+/* ======================= */
+@media (min-width: 1200px) {
+  /* === MAIN CONTENT === */
+  main {
+    margin-bottom: 650px;
+  }
+  .sectionsTitleTag {
+    font-size: 34px;
+  }
+  /* === MAIN CONTENT === */
+
+  /* === OUR TEAM SECTION === */
+  .team__infoTitle {
+    font-size: 26px;
+  }
+  /* === OUR TEAM SECTION === */
+
+  /* === MISSION-VISSION SECTION  === */
+  .mv__cardHeading {
+    font-size: 24px;
+  }
+  /* === MISSION-VISSION SECTION  === */
+
+  /* === HISTORY SECTION  === */
+  .hist__made-swiper {
+    width: 50%;
+  }
+  /* === HISTORY SECTION  === */
+}
+/* ======================= */
+@media (min-width: 1601px) {
+  /* === OUR SECTION === */
+  .team__infoTitle {
+    font-size: 28px;
+  }
+}
+/* ======================= */
+/* ========================================== */
+/* ======= MEDIA QUERIES (MIN-WIDTH) ======== */
+/* ========================================== */
+/* ======================= */
+@media (max-width: 767px) {
+  .team__statsDesc p {
+    font-size: 12px;
+  }
+}

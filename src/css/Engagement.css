@@ -1,0 +1,115 @@
+/* Engagement Model */
+.engage {
+  padding: 5rem 1rem;
+  background-color: var(--lighterGray);
+}
+.engage__heading {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.engage__container {
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.engage__hiring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.engage__hiring > div,
+.engage__right {
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.engage__hiring > div:hover,
+.engage__right:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+  0 4px 15px 0 rgba(0, 0, 0, 0.15);
+-ms-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+  0 4px 15px 0 rgba(0, 0, 0, 0.15);
+-o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+  0 4px 15px 0 rgba(0, 0, 0, 0.15);
+box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.engage__hiring div {
+  background: var(--light);
+  border: 1px solid #e0e2e4;
+  border-radius: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+}
+.engage__hiring div span {
+  margin-top: 15px;
+  display: block;
+  color: var(--lightGray);
+  font-size: 12px;
+}
+.engage__requirement {
+  background-color: var(--primaryColor);
+  padding: 1rem 2rem;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--light);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 2rem;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.engage__requirement:hover,
+.engage__requirement:focus {
+  background-color: var(--secondaryColor);
+
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.engage__right {
+  display: none;
+}
+.engage__right img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Engagement Model END*/
+@media (min-width: 992px) {
+  .engage__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .engage__right {
+    display: block;
+  }
+}

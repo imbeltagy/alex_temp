@@ -1,0 +1,112 @@
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .caseStudies,
+  .points,
+  .featuredInsights {
+    padding-block: 3rem;
+  }
+  /* == CASE STUDIES == */
+  .caseStudies__title {
+    font-size: 1.8rem;
+  }
+  .caseStudies__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .caseStudies__cards--cardTitle {
+    font-size: 2rem;
+  }
+  .caseStudies__cards--cardContent {
+    font-size: 1.25rem;
+  }
+  .caseStudies__cards--cardLink {
+    font-size: 1.25rem;
+  }
+  .caseStudies__cards--card-2,
+  .caseStudies__cards--card-3 {
+    grid-column: span 1;
+  }
+
+  /* == POINTS SECTION == */
+  .points__coverImage {
+    display: none;
+  }
+  .points__lgCoverImage {
+    display: block;
+  }
+
+  /* == FEATURED INSIGHTS == */
+  .featuredInsights__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .featuredInsights__title {
+    font-size: 2rem;
+  }
+  .featuredInsights__link {
+    font-size: 1.15rem;
+  }
+  .featuredInsights__cardTitle {
+    font-size: 1rem;
+  }
+  .featuredInsights__cardSubtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .featuredInsights__cardCoverImage img {
+    height: 22.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+  .caseStudies,
+  .points,
+  .featuredInsights {
+    padding-block: 4rem;
+  }
+  /* == CASE STUDIES == */
+  .caseStudies__cards--card-1,
+  .caseStudies__cards--card-4 {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+  }
+  .caseStudies__cards--card:not(.caseStudies__cards--card-4)
+    .caseStudies__cards--cardContainer {
+    padding-inline-start: 4rem;
+  }
+  .caseStudies__cards--cardContainer {
+    padding-top: 3.5rem;
+    align-content: space-evenly;
+  }
+
+  /* == POINTS SECTION == */
+  .points .FAQ__panel-title button {
+    font-size: 1.75rem;
+  }
+
+  /* == FEATURED INSIGHTS == */
+  .featuredInsights__title {
+    font-size: 2.5rem;
+  }
+  .featuredInsights__link {
+    font-size: 1.3rem;
+  }
+  .featuredInsights__cards {
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .featuredInsights__card {
+    background-color: unset;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    border-inline-start: 1px solid var(--lightGray);
+  }
+}
+@media (min-width: 1440px) {
+}
+/* @media (max-width: 469px) {
+} */
