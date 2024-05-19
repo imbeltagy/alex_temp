@@ -29,7 +29,6 @@
   padding-top: 1.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  cursor: pointer;
   grid-column: span 2;
   display: grid;
   align-content: space-between;
@@ -86,11 +85,21 @@
   border-radius: 1000px;
   transition: width 0.3s;
 }
-.caseStudies__cards--card:hover .caseStudies__cards--cardLink {
+.caseStudies__cards--cardLink:hover {
   padding-inline-start: 1.5rem;
 }
-.caseStudies__cards--card:hover .caseStudies__cards--cardLink::before {
+.caseStudies__cards--cardLink:hover::before {
   width: 1rem;
+}
+.caseStudies__cards--appLinks {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.caseStudies__cards--iconLink {
+  display: block;
+  height: 2rem;
+  width: 2rem;
 }
 
 .caseStudies__cards--cardImage img {
