@@ -1,0 +1,77 @@
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .jobs__section {
+    padding-block: 5rem;
+  }
+  .jobs__sectionTitle {
+    font-size: 1.9rem;
+  }
+
+  .keyBenifits__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .keyBenifits__benifit--text {
+    font-size: 1.25rem;
+  }
+
+  .vacancies__item--title {
+    font-size: 1.25rem;
+  }
+  .vacancies__item {
+    /* gap: 1rem; */
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__formFieldsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__submitButton {
+    margin-inline: 0;
+  }
+
+  /* FORM */
+  .jobs__textField--label {
+    font-size: 1.125rem;
+  }
+  .jobs__fileField--input {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+  .jobs__sectionTitle {
+    font-size: 2.25rem;
+  }
+
+  .keyBenifits__wrapper {
+    gap: 3rem;
+  }
+  .keyBenifits__benifit--text {
+    font-size: 1.5rem;
+  }
+
+  .vacancies__item--title {
+    font-size: 1.5rem;
+  }
+  .vacancies__item--text {
+    font-size: 1.125rem;
+  }
+
+  .contact__submitButton {
+    font-size: 1.125rem;
+    padding-block: 0.8rem;
+  }
+
+  /* FORM */
+  .jobs__textField--label {
+    font-size: 1.25rem;
+  }
+  .jobs__fileField--input {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1440px) {
+}

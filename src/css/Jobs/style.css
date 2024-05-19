@@ -1,0 +1,138 @@
+/* 
+1. === KEY BENIFITS ===
+2. === VACANCIES ===
+3. === CONTACT ===
+4. === FORM ===
+*/
+
+.jobs__section {
+  background-color: var(--light);
+  padding-block: 3rem;
+  padding-inline: 1rem;
+}
+.jobs__sectionTitle {
+  color: var(--primaryColor);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+/* ==================== */
+/* === KEY BENIFITS === */
+/* ==================== */
+
+.keyBenifits__wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+.keyBenifits__benifit {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2rem 1fr;
+  align-items: center;
+}
+.keyBenifits__benifit--text {
+  font-weight: 700;
+}
+
+/* ================= */
+/* === VACANCIES === */
+/* ================= */
+.vacancies__item {
+  border-bottom: 3px solid #d8d8d87d;
+  display: grid;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.vacancies__item--title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.vacancies__item--subtitle {
+  color: var(--primaryColor);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.vacancies__item--link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #171717;
+  font-size: 0.875rem;
+}
+.vacancies__item--link:hover {
+  color: var(--primaryColor);
+}
+.vacancies__item--linkIcon {
+  width: 1.25em;
+}
+
+/* =============== */
+/* === CONTACT === */
+/* =============== */
+.contact__formFieldsWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  column-gap: 3rem;
+}
+.contact__submitButton {
+  display: block;
+  margin-top: 1rem;
+  margin-inline: auto;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  transition: background-position 0.4s ease-in-out;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+.contact__submitButton:hover {
+  text-decoration: underline;
+}
+
+/* ============ */
+/* === FORM === */
+/* ============ */
+.jobs__fileField {
+  display: grid;
+  align-items: space-evenly;
+}
+.jobs__textField--label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #171717;
+  text-transform: uppercase;
+}
+/* Required * */
+.jobs__textField:has(input[required]) .jobs__textField--label::after {
+  content: "*";
+  color: red;
+  padding-inline-start: 0.25rem;
+}
+.jobs__textField--input {
+  all: unset;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 1.25rem 1rem;
+  background-color: #f5f4f4;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+}
+.jobs__textField--input:focus {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.jobs__textField--input::placeholder {
+  opacity: 0.2;
+}
