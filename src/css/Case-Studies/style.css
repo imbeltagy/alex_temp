@@ -11,6 +11,7 @@
   text-align: center;
   color: var(--secondaryColor);
   margin-bottom: 1.5rem;
+  padding-top: 200px;
 }
 .caseStudies__subtitle {
   text-align: center;
@@ -62,6 +63,16 @@
   color: currentColor;
   font-size: 1.3rem;
   font-weight: 800;
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+}
+.caseStudies__cards--cardTitle::after {
+  content: "";
+  width: min(50%, 8rem);
+  height: 2px;
+  border-radius: 1rem;
+  background-color: white;
 }
 .caseStudies__cards--cardContent {
   color: currentColor;

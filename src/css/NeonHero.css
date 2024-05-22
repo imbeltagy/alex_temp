@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"); /* Comment this line if you don't want to use Inter */
+
+.neonHero {
+  --neonHero-bgClr: rgb(0 3 12);
+  background-color: var(--neonHero-bgClr);
+  min-height: 100svh;
+  position: relative;
+}
+.neonHero__titleContainer {
+  min-height: 50svh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.neonHero__title {
+  font-family: "Inter", "Montserrat", sans-serif; /* Comment this line if you don't want to use Inter */
+  text-align: center;
+  color: var(--neonHero-bgClr);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
+  /* letter-spacing: 0.03em; */ /* Uncomment this line if you don't want to use Inter */
+}
+.neonHero__title span {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .neonHero__title {
+    font-size: 4.5rem;
+  }
+}
+
+.neonHero__apps {
+  position: absolute;
+  top: 50%;
+  height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  pointer-events: none;
+}
+.neonHero__apps--slider {
+  animation: slide-to-left 90s linear infinite;
+}
+@keyframes slide-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% + 100svw));
+  }
+}
+.neonHero__apps--wrapper {
+  display: flex;
+}
+.neonHero__apps--imgContainer {
+  width: 250px;
+  padding-inline: 0.75rem;
+}
