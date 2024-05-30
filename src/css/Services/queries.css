@@ -23,6 +23,19 @@
     display: block;
   }
 
+  /* FEATURES */
+  .features__feet {
+    padding-inline: 5rem;
+  }
+  .features__feetWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  /* DIALOG */
+  .features__dialogContent--colsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
   /* WHAT WE DO */
   .whatWeDo {
     padding-block: 6rem;
