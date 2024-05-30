@@ -306,7 +306,18 @@ section {
   background-color: var(--primaryColor);
 }
 .features__feetContent--action {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
   margin-top: 2rem;
+  padding: 1rem 2rem;
+  color: var(--light);
+  font-weight: 700;
+  background-color: #d01573;
+  transition: background-color 0.3s;
+}
+.features__feetContent--action:hover {
+  background-color: #c06;
 }
 
 /* DIALOG */
@@ -458,6 +469,26 @@ section {
 }
 .features__dialogContent--techImage:hover::after {
   opacity: 1;
+}
+.features__dialog--action {
+  color: #fff;
+  background-color: #124fe6;
+  border-color: #124fe6;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+}
+.features__dialog--action:hover {
+  background-color: #7195f0;
+  border-color: #7195f0;
 }
 
 /* ========================= */
