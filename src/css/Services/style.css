@@ -485,6 +485,7 @@ section {
   width: fit-content;
   align-items: center;
   gap: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 .features__dialog--action:hover {
   background-color: #7195f0;
