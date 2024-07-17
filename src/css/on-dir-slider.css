@@ -1,0 +1,120 @@
+.one-dir-slider,
+.text-slider,
+.bullet {
+  --animation-duration: 700;
+  --styled-animation-duration: calc(var(--animation-duration) * 1ms);
+}
+
+/* ------------text slider------------- */
+.text-slider {
+  position: relative;
+}
+.text-slide {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  opacity: 0;
+  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  -o-transform: translateX(30%);
+  transition: transform var(--styled-animation-duration) linear,
+    opacity var(--styled-animation-duration) ease-in;
+  -webkit-transition: transform var(--styled-animation-duration) linear,
+    opacity var(--styled-animation-duration) ease-in;
+  -moz-transition: transform var(--styled-animation-duration) linear,
+    opacity var(--styled-animation-duration) ease-in;
+  -ms-transition: transform var(--styled-animation-duration) linear,
+    opacity var(--styled-animation-duration) ease-in;
+  -o-transition: transform var(--styled-animation-duration) linear,
+    opacity var(--styled-animation-duration) ease-in;
+}
+.text-slider.text-slider-vertical .text-slide {
+  transform: translateY(10%);
+  -webkit-transform: translateY(10%);
+  -moz-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  -o-transform: translateY(10%);
+}
+.text-slide.active {
+  opacity: 1;
+  transform: translate(0) !important;
+  -webkit-transform: translate(0) !important;
+  -moz-transform: translate(0) !important;
+  -ms-transform: translate(0) !important;
+  -o-transform: translate(0) !important;
+}
+/* -----------image slider--------------- */
+.one-dir-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: width var(--styled-animation-duration),
+    height var(--styled-animation-duration);
+  -webkit-transition: width var(--styled-animation-duration),
+    height var(--styled-animation-duration);
+  -moz-transition: width var(--styled-animation-duration),
+    height var(--styled-animation-duration);
+  -ms-transition: width var(--styled-animation-duration),
+    height var(--styled-animation-duration);
+  -o-transition: width var(--styled-animation-duration),
+    height var(--styled-animation-duration);
+}
+.one-dir-slider-vertical .slide {
+  width: 100%;
+  height: 0;
+}
+.slide.active {
+  width: 100%;
+  height: 100%;
+}
+.slide > * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------------------------------- */
+.slider-bulltes {
+  display: grid;
+  gap: 15px;
+  position: relative;
+}
+.bullet {
+  width: 0;
+  height: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  opacity: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: height calc(var(--animation-duration) / 2ms),
+    position calc(var(--animation-duration) / 2ms);
+  -webkit-transition: height calc(var(--animation-duration) / 2ms);
+  -moz-transition: height calc(var(--animation-duration) / 2ms);
+  -ms-transition: height calc(var(--animation-duration) / 2ms);
+  -o-transition: height calc(var(--animation-duration) / 2ms);
+}
+.bullet.active {
+  --move-distance: 19; /* grid gap + (border width * 2 )*/
+  opacity: 100%;
+  position: absolute;
+}
+.bullet.expand {
+  height: 25px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

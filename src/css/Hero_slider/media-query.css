@@ -1,0 +1,49 @@
+/* ---------------media query---------------------------- */
+@media (max-width: 768px) {
+  .Hero .main {
+    width: 93%;
+  }
+  .main .text-slide h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    letter-spacing: 1px;
+  }
+  .main header,
+  .main .text-slider {
+    margin-inline: 2em;
+  }
+  .main .text-slide {
+    width: 100%;
+  }
+  .Hero .projects {
+    width: 100%;
+    height: 60%;
+    flex-flow: row-reverse wrap;
+  }
+  .view-projects {
+    height: 100%;
+    width: 60%;
+  }
+  .projects__video {
+    height: 100%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  header,
+  .main-ul li {
+    font-size: 0.7em;
+  }
+  .Hero .projects {
+    height: 100%;
+  }
+  .view-projects {
+    width: 100%;
+    height: auto;
+  }
+  .projects__video {
+    width: 100%;
+    height: auto;
+  }
+}

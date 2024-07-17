@@ -1,0 +1,194 @@
+@keyframes sliding {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      calc(-50% - 1rem)
+    ); /* 1rem => gap between slides / 2 */
+    -webkit-transform: translateX(calc(-50% - 1rem));
+    -moz-transform: translateX(calc(-50% - 1rem));
+    -ms-transform: translateX(calc(-50% - 1rem));
+    -o-transform: translateX(calc(-50% - 1rem));
+  }
+}
+/* =========================================== */
+.Autoslider__container {
+  padding-top: 3.5rem;
+  width: 100%;
+  color: #130b35;
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+.Autoslider__textContent {
+  padding-block: 3.5rem 2rem;
+  margin-inline: auto;
+  /* margin: 3rem 1rem; */
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.Autoslider__textContent p {
+  color: #343535;
+}
+.AutoSlider__heading {
+  font-size: 3.75rem;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+.AutoSlider__subheading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  margin-block: 1.1rem;
+}
+.AutoSlider__paragraph {
+  font-size: 1.1rem;
+}
+.AutoSlider__button {
+  padding: 0.875rem 3rem;
+  margin-block: 1.3rem;
+  border: none;
+  background-color: #ffd900;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.AutoSlider__button:hover,
+.AutoSlider__button:focus {
+  background-color: #130b35;
+  color: white;
+}
+.AutoSlider__subparagraph {
+  font-size: 0.9rem;
+}
+/* ============================================= */
+.Autoslider {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+.Autoslider__track {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  -ms-column-gap: 2rem;
+  -o-column-gap: 2rem;
+  animation: sliding 22s linear infinite;
+  -webkit-animation: sliding 22s linear infinite;
+  will-change: transform;
+}
+.Autoslider__slide {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.Autoslider__slide > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Autoslider__slide:nth-child(even) {
+  margin-top: 3rem;
+}
+.Autoslider__slide:nth-child(odd) {
+  margin-bottom: 3rem;
+}
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 767px) {
+  .Autoslider__slide {
+    width: 15rem;
+    height: 9rem;
+  }
+}
+@media (min-width: 768px) {
+  .Autoslider__container {
+    padding-top: 5rem;
+  }
+  .Autoslider__textContent {
+    padding-block: 3rem;
+  }
+  .AutoSlider__heading {
+    font-size: 4.5rem;
+  }
+  .AutoSlider__subheading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .AutoSlider__button {
+    margin-top: 1.5rem;
+  }
+  .Autoslider__slide {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+@media (min-width: 1024px) {
+  .Autoslider__textContent {
+    padding-inline: 3rem;
+  }
+  .AutoSlider__heading {
+    font-size: 4.5rem;
+  }
+  .AutoSlider__button {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .Autoslider__slide {
+    width: 30rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 1280px) {
+  .Autoslider__textContent {
+    padding-block: 3.5rem;
+  }
+  .AutoSlider__heading {
+    font-size: 6rem;
+  }
+  .Autoslider__slide {
+    width: 21rem;
+    height: 11rem;
+  }
+}
+@media (min-width: 1536px) {
+  .Autoslider__textContent {
+    padding-block: 6rem;
+  }
+  .AutoSlider__heading {
+    font-size: 6rem;
+  }
+  .Autoslider__slide {
+    width: 33rem;
+    height: 18rem;
+  }
+}

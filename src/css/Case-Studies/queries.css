@@ -7,6 +7,13 @@
     padding-block: 3rem;
   }
   /* == CASE STUDIES == */
+
+  .caseStudies__cards--card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 0;
+  }
+
   .caseStudies__title {
     font-size: 1.8rem;
   }
@@ -22,10 +29,6 @@
   }
   .caseStudies__cards--cardLink {
     font-size: 1.25rem;
-  }
-  .caseStudies__cards--card-2,
-  .caseStudies__cards--card-3 {
-    grid-column: span 1;
   }
 
   /* == POINTS SECTION == */
@@ -69,15 +72,6 @@
     padding-block: 4rem;
   }
   /* == CASE STUDIES == */
-  .caseStudies__cards--card-1,
-  .caseStudies__cards--card-4 {
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 0;
-  }
-  .caseStudies__cards--card:not(.caseStudies__cards--card-4)
-    .caseStudies__cards--cardContainer {
-    padding-inline-start: 4rem;
-  }
   .caseStudies__cards--cardContainer {
     padding-top: 3.5rem;
     align-content: space-evenly;

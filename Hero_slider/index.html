@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href=".././src/css/on-dir-slider.css" />
+    <link rel="stylesheet" href=".././src/css/Hero_slider/style.css" />
+    <link rel="stylesheet" href=".././src/css/Hero_slider/media-query.css" />
+    <title>Hero Slider</title>
+  </head>
+  <body>
+    <div class="Hero">
+      <div class="one-dir-slider main-slider">
+        <div class="slide active">
+          <img src=".././assets/Hero_slider/mainBG.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src=".././assets/Hero_slider/bg2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="side-nav">
+        <button>
+          <img
+            class="side-nav__icon"
+            src=".././assets/Hero_slider/noun-grid-16450.svg"
+            alt=""
+            style="width: 25px"
+          />
+        </button>
+        <ul class="side-nav-ul">
+          <li><span>Architecture</span></li>
+          <li><span>Design</span></li>
+          <li><span>Constructing</span></li>
+        </ul>
+      </div>
+      <section class="main">
+        <header>
+          <p>Forarch.</p>
+          <ul class="main-ul">
+            <li>FB</li>
+            <li>TW</li>
+            <li>IG</li>
+          </ul>
+        </header>
+        <div class="text-slider main-slider">
+          <div class="text-slide active">
+            <h1>Architecture</h1>
+          </div>
+          <div class="text-slide">
+            <h1>Constructing</h1>
+          </div>
+        </div>
+        <div class="text-slider text-slider-vertical">
+          <div class="text-slide active">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptas, sint minus voluptatum doloremque exercitationem
+              reiciendis totam rem quam saepe cumque similique voluptate
+              inventore eos.
+            </p>
+          </div>
+          <div class="text-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptas, sint minus voluptatum doloremque exercitationem
+              reiciendis totam rem quam saepe cumque similique voluptate
+              inventore eos.
+            </p>
+          </div>
+        </div>
+        <div class="slider-arrows">
+          <button id="one-dir-slider-prev" class="arrows__next">
+            <i class="fi fi-rr-arrow-left"></i>
+          </button>
+          <button id="one-dir-slider-next" class="arrows__next">
+            <i class="fi fi-rr-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects__video">
+          <div class="one-dir-slider main-slider">
+            <div class="slide active">
+              <video class="silde-video" muted>
+                <source src=".././assets/Hero_slider/flying.mp4" />
+              </video>
+            </div>
+            <div class="slide">
+              <video class="silde-video" muted>
+                <source src=".././assets/Hero_slider/flying.mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="video-nav">
+            <ul class="slider-bulltes">
+              <li class="active bullet"></li>
+              <li class="bullet"></li>
+              <li class="bullet"></li>
+              <li class="bullet"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="view-projects">
+          <div class="one-dir-slider one-dir-slider-vertical">
+            <div class="slide active">
+              <img src=".././assets/Hero_slider/project1.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src=".././assets/Hero_slider/project2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="text">
+              <div class="text-slider text-slider-vertical">
+                <div class="text-slide active">
+                  <h3>Futurism Design</h3>
+                </div>
+                <div class="text-slide">
+                  <h3>Modern Architecture</h3>
+                </div>
+              </div>
+              <button>view Project &#10009;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src=".././src/js/Hero_slider/script.js"></script>
+    <script src=".././src/js/one-dir-slider.js"></script>
+  </body>
+</html>
