@@ -27,7 +27,7 @@
 .Autoslider__textContent {
   padding-block: 3.5rem 2rem;
   margin-inline: auto;
-  /* margin: 3rem 1rem; */
+  padding-inline: 1rem;
   display: grid;
   place-items: center;
   text-align: center;
