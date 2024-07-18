@@ -1,0 +1,228 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  background: #fafafacc;
+  z-index: 1002;
+  backdrop-filter: blur(12px);
+}
+.navbar__container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.navbar__brand {
+  flex-basis: 12rem;
+  color: #f49e36;
+  font-size: 1.3rem;
+}
+
+.navbar__brand img {
+  width: 100%;
+  height: auto;
+}
+
+#navbar-checkbox {
+  display: none;
+}
+.navbar__icon {
+  position: relative;
+  margin-inline-start: auto;
+  width: 1.5rem;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__icon {
+    display: none;
+  }
+}
+
+.navbar__icon span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #130b35;
+  border-radius: 0.1rem;
+  transition: background-color 0.3s, inset 0.3s, transform 0.3s;
+}
+
+.navbar__icon span:first-child {
+  top: 0;
+}
+
+.navbar__icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar__icon span:last-child {
+  bottom: 0;
+}
+
+.navbar__icon:hover span {
+  background-color: #f49e36;
+}
+
+.navbar:has(#navbar-checkbox:checked) .navbar__icon span:first-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar:has(#navbar-checkbox:checked) .navbar__icon span:nth-child(2) {
+  left: 100%;
+}
+
+.navbar:has(#navbar-checkbox:checked) .navbar__icon span:last-child {
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.navbar__list {
+  position: absolute;
+  top: 100%;
+  inset-inline-end: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
+  background-color: inherit;
+}
+
+.navbar:has(#navbar-checkbox:checked) .navbar__list {
+  grid-template-rows: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__list {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.autoSliderHeader .nav-list ul {
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__ul {
+    background: transparent;
+    overflow: visible;
+    display: flex;
+    gap: 1rem;
+    border-width: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  .navbar__ul {
+    gap: 2rem;
+  }
+}
+
+.navbar__listItem {
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  color: #130b35;
+}
+
+.navbar__listItem:hover {
+  color: #f49e36;
+}
+
+.navbar__listItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #130b35;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__listItem::before {
+    top: calc(100% + 0.2rem);
+    width: 0;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+  }
+
+  .navbar__listItem:hover::before {
+    inset-inline-end: auto;
+    inset-inline-start: 0;
+    width: 100%;
+    background-color: #f49e36;
+  }
+}
+
+.navbar__listItem a {
+  display: inline-block;
+  color: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 1rem;
+  padding-inline: 0.5rem calc(3rem + 3rem - 0.5rem);
+  transition: padding-inline 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__listItem a {
+    padding: 0;
+  }
+}
+
+.navbar__listItem:hover a {
+  padding-inline: 3rem 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__listItem:hover a {
+    padding: 0;
+  }
+}
+
+.navbar__action {
+  display: block;
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: 0.875rem 2rem;
+  margin-block: 1.3rem;
+  background-color: #ffd900;
+  color: #130b35;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.navbar__action:hover,
+.navbar__action:focus {
+  background-color: #130b35;
+  color: white;
+}
