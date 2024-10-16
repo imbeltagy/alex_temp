@@ -25,6 +25,7 @@
   line-height: 1;
   text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
     -1px 1px 0 #fff;
+  z-index: 5;
   /* letter-spacing: 0.03em; */ /* Uncomment this line if you don't want to use Inter */
 }
 .neonHero__title span {
@@ -44,8 +45,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: inherit;
-  padding-bottom: 2rem;
+  /* background-color: inherit; */
+  padding-bottom: 4rem;
+  background-image: linear-gradient(to top, transparent, #0009, #0009 80%);
 }
 .neonHero__text {
   color: #fff;

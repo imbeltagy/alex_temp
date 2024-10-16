@@ -1,0 +1,56 @@
+.mutation {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.invisible {
+  opacity: 0;
+}
+.scale-0 {
+  transform: scale(0);
+}
+.moveUp {
+  animation-name: moveUp, visible;
+}
+.moveDown {
+  animation-name: moveDown, visible;
+}
+.scaleUp {
+  animation-name: scaleUp;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
