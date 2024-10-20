@@ -3,12 +3,17 @@
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
+
 .invisible {
   opacity: 0;
 }
 .scale-0 {
   transform: scale(0);
 }
+.pushed-down {
+  transform: translateY(100%);
+}
+
 .moveUp {
   animation-name: moveUp, visible;
 }
@@ -17,6 +22,9 @@
 }
 .scaleUp {
   animation-name: scaleUp;
+}
+.slideUp {
+  animation-name: slideUp;
 }
 
 @keyframes visible {
@@ -52,5 +60,13 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

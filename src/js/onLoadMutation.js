@@ -4,6 +4,7 @@ const initialMutationClasses = {
   moveUp: ["invisible"],
   moveDown: ["invisible"],
   scaleUp: ["scale-0"],
+  slideUp: ["pushed-down"],
 };
 
 elements.forEach((element) => {
@@ -12,10 +13,12 @@ elements.forEach((element) => {
   const duration = parseInt(
     element.getAttribute("data-mutation-duration") || "500"
   );
+  const timing = element.getAttribute("data-mutation-timing") || "ease-in-out";
 
   element.classList.add(...initialMutationClasses[mutation], "mutation");
   if (delay) element.style.animationDelay = delay + "ms";
   if (duration) element.style.animationDuration = duration + "ms";
+  if (timing) element.style.animationTimingFunction = timing;
 });
 
 window.addEventListener("DOMContentLoaded", () => {

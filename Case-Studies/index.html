@@ -19,7 +19,6 @@
     />
     <link rel="stylesheet" href="/src/css/General.css" />
     <link rel="stylesheet" href="/src/css/glass-navbar.css" />
-    <link rel="stylesheet" href="/src/css/callModal.css" />
     <link rel="stylesheet" href="/src/css/NeonHero.css" />
     <link rel="stylesheet" href="/src/css/Footer.css" />
     <link rel="stylesheet" href="/src/css/onScroll-Animation.css" />
@@ -29,6 +28,7 @@
     <link rel="stylesheet" href="/src/css/Case-Studies/style.css" />
     <link rel="stylesheet" href="/src/css/Case-Studies/queries.css" />
     <link rel="stylesheet" href="/src/css/onLoadMutation.css" />
+    <link rel="stylesheet" href="/src/css/popup-video.css" />
     <title>Contact</title>
   </head>
   <body>
@@ -65,155 +65,56 @@
     </header>
     <!-- Header -->
 
-    <div class="callModal">
-      <div class="modal__backdrop"></div>
-      <div class="modal__formContainer">
-        <div class="modal__form">
-          <div class="modal__formHead">
-            <button type="button" class="modal__close callModalClose">
-              <img
-                data-mutation
-                data-mutation-type="fadeIn-Mutation"
-                loading="lazy"
-                src="/assets/General/close.svg"
-                alt="close"
-                width="25"
-                height="25"
-              />
-            </button>
-            <div class="modal__avatar">
-              <div class="modal__avatarImg">
-                <img
-                  data-mutation
-                  data-mutation-type="fadeIn-Mutation"
-                  loading="lazy"
-                  src="/assets/General/oliver.webp"
-                  alt="oliver"
-                  width="120"
-                  height="120"
-                />
-              </div>
-              <div class="modal__avatarDesc">
-                <strong>Request a Call Back</strong>
-                <p>
-                  Enter your contact details and one of our friendly team member
-                  will be in touch soon!.
-                </p>
-              </div>
-            </div>
-          </div>
-          <form class="modal__formBody" id="modalForm">
-            <label class="modal-label" for="modal-fullName">
-              <input
-                required
-                placeholder="Full Name"
-                type="text"
-                id="modal-fullName"
-                name="modal-fullName"
-              />
-              <small data-inputName="modal-fullName"
-                >Name is required & can't be empty!</small
-              >
-            </label>
-            <label class="modal-label" for="modal-email">
-              <input
-                required
-                placeholder="Email"
-                type="email"
-                id="modal-email"
-                name="modal-email"
-              />
-              <small data-inputName="modal-email">Email is required</small>
-            </label>
-            <label class="modal-label" for="modal-contact">
-              <input
-                required
-                placeholder="Contact Number"
-                type="number"
-                id="modal-contact"
-                name="modal-contact"
-              />
-              <small data-inputName="modal-contact"
-                >Contact number is required</small
-              >
-            </label>
-            <label class="modal-label" for="modal-services" class="">
-              <select
-                aria-label="services"
-                class=""
-                name="modal-services"
-                id="modal-services"
-              >
-                <option value="-- Select the Service --">
-                  -- Select the Service --
-                </option>
-                <option value="mobile-app-development">
-                  Mobile App Development
-                </option>
-                <option value="ar-development">AR Development</option>
-                <option value="vr-development">VR Development</option>
-                <option value="web-development">Web Development</option>
-                <option value="game-development">Game Development</option>
-                <option value="enterprise-solutions">
-                  Enterprise Solution
-                </option>
-                <option value="">Startup MVP</option>
-                <option value="other">Other</option>
-              </select>
-              <small data-inputName="modal-services"
-                >Please choose a service</small
-              >
-            </label>
-            <label class="modal-label" for="modal-region" class="">
-              <select
-                aria-label="region"
-                class=""
-                name="modal-region"
-                id="modal-region"
-              >
-                <option value="Your Region">Your Region</option>
-                <option value="africa">Africa</option>
-                <option value="asia">Asia</option>
-                <option value="south-america">South America</option>
-                <option value="north-america">North America</option>
-                <option value="europe">Europe</option>
-                <option value="austrlia">Austrlia</option>
-              </select>
-              <small data-inputName="modal-region"
-                >Please choose a region</small
-              >
-            </label>
-            <label for="modal-submit" class="modal-label">
-              <button id="modal-submit">Request a Call Back</button>
-            </label>
-          </form>
+    <!-- Pop-up Video -->
+    <div
+      id="popupVid"
+      class="popupVid"
+      data-mutation-onload="slideUp"
+      data-mutation-delay="700"
+      data-mutation-duration="1000"
+      data-mutation-timing="ease"
+    >
+      <div class="popupVid__vidWrapper">
+        <video
+          id="popupVid__vid"
+          class="popupVid__vid"
+          width="320"
+          height="240"
+          poster="https://kersversdigital.nl/wp-content/uploads/2022/06/mitch-5-website-poster-1.jpg"
+          playsinline=""
+          preload="none"
+        >
+          <source
+            type="video/mp4"
+            src="https://kersversdigital.nl/wp-content/uploads/2022/06/mitch-5-website-opt.mp4"
+          />
+          متصفحك لا يدعم هذا الفيديو
+        </video>
+        <div id="popupVid__toggle" class="popupVid__toggle">
+          <img
+            src="/assets/popup-vid/play.svg"
+            alt=" "
+            class="popupVid__playBtn"
+          />
+          <img
+            src="/assets/popup-vid/pause.svg"
+            alt=" "
+            class="popupVid__pauseBtn"
+          />
         </div>
       </div>
-    </div>
-
-    <div class="hireModal" id="hireModal">
-      <div class="hireModal__img">
+      <div id="popupVid__close" class="popupVid__close">
         <img
-          src="/assets/General/handshake.svg"
-          alt=""
-          width="50"
-          height="50"
+          src="/assets/popup-vid/close.svg"
+          alt="X"
+          class="popupVid__closeBtn"
         />
       </div>
-      <div class="hireModal__desc">
-        <span>Looking to Hire Developers for Your Next Project?</span>
-        <span
-          >Talk to Intelivita, a recognised Web and Mobile App Development
-          Agency in the UK.</span
-        >
-      </div>
-      <div class="hireModal__togglers">
-        <a href="/Contact/index.html">Get in Touch Now</a>
-        <button>
-          <img src="/assets/General/close.svg" alt="" width="20" height="20" />
-        </button>
-      </div>
+      <button id="popupVid__action" class="popupVid__action" tabindex="-1">
+        Video Explanation?
+      </button>
     </div>
+    <!-- Pop-up Video -->
 
     <main>
       <a
@@ -1973,14 +1874,13 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/src/js/callModal.js"></script>
     <script src="/src/js/smoothScroll.js"></script>
-    <script src="/src/js/hireModal.js"></script>
     <script src="/src/js/onScroll-Animation.js"></script>
     <script src="/src/js/Timed-FAQ.js"></script>
     <script src="/src/js/swipers/case-studies.js"></script>
     <script src="/src/js/swipers/Brands.js"></script>
     <script src="/src/js/Case-Studies/script.js"></script>
     <script src="/src/js/onLoadMutation.js"></script>
+    <script src="/src/js/popup-video.js"></script>
   </body>
 </html>
