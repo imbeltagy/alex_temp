@@ -6,30 +6,44 @@
   min-height: 100svh;
   position: relative;
 }
+.neonHero__slidePlayground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.neonHero__slidePlayground :where(img, video) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .neonHero__titleContainer {
-  min-height: 50svh;
+  min-height: 100svh;
   display: grid;
-  align-content: flex-end;
-  justify-content: center;
-  flex-direction: column;
+  place-content: center;
   z-index: 3;
   position: relative;
-  background-color: #0009;
+  background-color: #0007;
 }
 .neonHero__title {
-  font-family: "Inter", "Montserrat", sans-serif; /* Comment this line if you don't want to use Inter */
+  font-family: "Inter", "Montserrat", sans-serif;
   text-align: center;
-  color: var(--neonHero-bgClr);
   font-size: 3rem;
   font-weight: 900;
   line-height: 1;
-  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
-    -1px 1px 0 #fff;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
   z-index: 5;
-  /* letter-spacing: 0.03em; */ /* Uncomment this line if you don't want to use Inter */
 }
 .neonHero__title span {
   color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 @media (min-width: 768px) {
   .neonHero__title {
@@ -37,17 +51,9 @@
   }
 }
 .neonHero__titleContent {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
   width: min(100%, 60rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: inherit; */
-  padding-bottom: 4rem;
-  background-image: linear-gradient(to top, transparent, #0009, #0009 80%);
+  margin-inline: auto;
+  text-align: center;
 }
 .neonHero__text {
   color: #fff;
@@ -60,21 +66,6 @@
   .neonHero__text {
     font-size: 1.5rem;
   }
-}
-.neonHero__link {
-  display: block;
-  text-align: center;
-  color: white;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 0.5rem 1.2rem;
-  border: 1px solid white;
-  border-radius: 7px;
-  transition: color 0.3s, background-color 0.3s;
-}
-.neonHero__link:hover {
-  color: var(--neonHero-bgClr);
-  background-color: white;
 }
 
 .neonHero__apps {
