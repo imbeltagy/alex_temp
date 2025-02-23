@@ -140,11 +140,6 @@ small {
   display: block;
 }
 /* SCHEDULE SECTION END*/
-@media (min-width: 576px) {
-  .cts__form {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media (min-width: 768px) {
   .cts__submit {
     -ms-grid-column-align: end;
@@ -164,18 +159,6 @@ small {
     justify-content: space-between;
     gap: 3rem;
   }
-}
-.cts__textareaLabel {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-}
-.cts__servicesLabel {
-  -ms-grid-column: span 2;
-  grid-column: span 2;
-}
-.cts__submit {
-  -ms-grid-column: span 2;
-  grid-column: span 2;
 }
 /* --------------- */
 .schedule-meeting-main {

@@ -2231,155 +2231,11 @@
                   type="number"
                   id="contactNumber"
                   name="contactNumber"
-                  placeholder="Contact No"
+                  placeholder="Phone Number"
                 />
                 <small data-inputName="contactNumber"
                   >The Contact number is required please enter a valid
                   number</small
-                >
-              </label>
-              <label for="companyName" class="cts__label cts__companyNameLabel">
-                <input
-                  required
-                  class="cts__formInp"
-                  type="text"
-                  id="companyName"
-                  name="companyName"
-                  placeholder="Company Name"
-                />
-                <small data-inputName="companyName"
-                  >The Company name is required and cannot be empty</small
-                >
-              </label>
-              <label for="budget" class="cts__label cts__budgetLabel">
-                <select
-                  aria-label="budget"
-                  id="budget"
-                  class="cts__formInp"
-                  name="budget"
-                >
-                  <option value="-- Your Budget --">-- Your Budget --</option>
-                  <option value="0-1000">&euro;0 - &euro;1000</option>
-                  <option value="1000-5000">&euro;1000 - &euro;5000</option>
-                  <option value="5000-10000">&euro;5000 - &euro;10000</option>
-                  <option value="10000-20000">&euro;10000 - &euro;20000</option>
-                  <option value="20000+">&euro;20000+</option>
-                </select>
-                <small data-inputName="budget">Please choose your budget</small>
-              </label>
-              <label for="region" class="cts__label cts__regionLabel">
-                <select
-                  aria-label="region"
-                  class="cts__formInp"
-                  name="region"
-                  id="region"
-                >
-                  <option value="Your Region">Your Region</option>
-                  <option value="africa">Africa</option>
-                  <option value="asia">Asia</option>
-                  <option value="south-america">South America</option>
-                  <option value="north-america">North America</option>
-                  <option value="europe">Europe</option>
-                  <option value="austrlia">Austrlia</option>
-                </select>
-                <small data-inputName="region">Please choose a region</small>
-              </label>
-              <label for="services" class="cts__label cts__servicesLabel">
-                <select
-                  aria-label="services"
-                  class="cts__formInp"
-                  name="service"
-                  id="services"
-                >
-                  <option value="-- Select the Service --">
-                    -- Select the Service --
-                  </option>
-                  <option value="mobile-app-development">
-                    Mobile App Development
-                  </option>
-                  <option value="ar-development">AR Development</option>
-                  <option value="vr-development">VR Development</option>
-                  <option value="web-development">Web Development</option>
-                  <option value="game-development">Game Development</option>
-                  <option value="enterprise-solutions">
-                    Enterprise Solution
-                  </option>
-                  <option value="">Startup MVP</option>
-                  <option value="other">Other</option>
-                </select>
-                <small data-inputName="service">Please choose a service</small>
-              </label>
-              <label
-                for="where-did-you-hear-about-us"
-                class="cts__label cts__hearingLabel"
-              >
-                <select
-                  aria-label="where-did-hear-about-us"
-                  class="cts__formInp"
-                  name="heared-about-us"
-                  id="where-did-you-hear-about-us"
-                >
-                  <option value="where">Where Did You Hear About Us?</option>
-                  <option value="google">Google</option>
-                  <option value="clutch">Clutch</option>
-                  <option value="people-per-hour">People Per Hour</option>
-                  <option value="goodfirms">GoodFirms</option>
-                  <option value="people-reference">People References</option>
-                  <option value="social-media">Social Media</option>
-                  <option value="other">Other</option>
-                </select>
-                <small data-inputName="heared-about-us"
-                  >Choose an option!</small
-                >
-              </label>
-              <label
-                for="attach"
-                aria-label="attachment"
-                class="cts__label cts__attachLabel"
-              >
-                <div class="cts__attachGroup">
-                  <input
-                    required
-                    type="file"
-                    name="attach"
-                    id="attach"
-                    class="cts__formInp"
-                    style="visibility: hidden; display: none"
-                  />
-                  <label
-                    class="cts__subAttachHolder"
-                    for="subfile"
-                    aria-label="attachments"
-                  >
-                    <input
-                      required
-                      type="text"
-                      name="placeholder"
-                      id="subfile"
-                      class="cts__formInp"
-                      disabled
-                      placeholder="Choose File"
-                    />
-                    <button
-                      id="attachButton"
-                      type="button"
-                      class="cts__attachClick"
-                    >
-                      <img
-                        data-mutation
-                        data-mutation-type="fadeIn-Mutation"
-                        loading="lazy"
-                        src="/assets/Form/attach-clip.svg"
-                        alt="paper-clip"
-                        width="30"
-                        height="30"
-                      />
-                    </button>
-                  </label>
-                </div>
-                <small data-inputName="attach" id="attachErrorMsg"
-                  >Please check selected file. File must be jpeg|png|doc|pdf
-                  &amp; less then 10 MB.</small
                 >
               </label>
               <label for="your-message" class="cts__textareaLabel cts__label">
@@ -2387,12 +2243,13 @@
                   class="cts__formInp"
                   name="message"
                   id="your-message"
-                  placeholder="Message"
+                  placeholder="Project Idea"
                 ></textarea>
                 <small data-inputName="message"
                   >Provide us with a brief of your project!</small
                 >
               </label>
+
               <button type="submit" class="cts__submit">Send Message</button>
             </form>
           </div>

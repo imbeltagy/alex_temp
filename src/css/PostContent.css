@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.post__content,
+.post__content > * {
+  font-family: "Poppins", serif;
+}
+
+.post__content p {
+  color: #444;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+
+.post__content ol {
+  padding-left: 20px;
+}
+
+.post__content ol li {
+  color: #444;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.post__content article {
+  box-shadow: 0 20px 40px 0 #0000000d;
+  background-color: #fef8f4;
+  padding: 20px 20px 10px;
+  border-radius: 5px;
+  border: 1px solid #f4f4f4;
+  margin-block: 1rem 0.5rem;
+}
+
+.post__content article h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #202122;
+  font-weight: 600;
+}
+
+.post__content ul {
+  padding-left: 2px;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.post__content ul li {
+  position: relative;
+  color: #444;
+  list-style: none;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.post__content ul li::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ec7323;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.post__content article ul li::before {
+  background-color: #ec7323;
+}
+
+.post__content ul li a {
+  color: #444;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.post__content h2 {
+  color: #202122;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-block: 32px 25px;
+}
+
+.post__content h3 {
+  color: #202122;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-block: 30px;
+}
+
+.post__content strong {
+  color: #202122;
+  font-weight: 600;
+}
+
+.post__content a {
+  font-size: 1em;
+  color: #ec7323;
+}
